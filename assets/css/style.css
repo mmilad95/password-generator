@@ -51,7 +51,21 @@ header {
 }
 
 .card-body {
-  min-height: 100px;
+    min-height: 100px;
+}
+
+.card-body span {
+    font-size: 10px;
+}
+
+.generatedpassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 400px;
+
 }
 
 .card-footer {

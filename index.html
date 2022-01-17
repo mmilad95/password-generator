@@ -17,14 +17,39 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+
+        <h3 class="generatedpassword">password</h3>
+
+        
+        <div class="card-body">           
+            <div>
+                <label for ="characterNumberAmount">Character #'s <span>enter # between 8-128.</span></label>
+                <input type="minmaxChar" min="8" max="128" id="characterNumber">
+            </div>
+
+            <div>
+                <label for="addLowercase"> Add Lowercase</label>
+                <input type="checkbox" id="addLowercase">
+            </div>
+
+            <div>
+                <label for="addUppercase"> Add Uppercase</label>
+                <input type="checkbox" id="addUppercase">
+            </div>
+
+            <div>
+                <label for="addNumber"> Add Numbers</label>
+                <input type="checkbox" id="addNumber">
+            </div>
+
+            <div>
+                <label for="addSpecialChar"> Add Special Characters</label>
+                <input type="checkbox" id="addSpecialChar">
+            </div>
+
         </div>
+        
+        
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
